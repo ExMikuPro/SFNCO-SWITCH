@@ -1,4 +1,4 @@
-# Install script for directory: /Users/hatsunemiku/Documents/Dev/Clion/STM32F401RCT6_ST7789V
+# Install script for directory: /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/hatsunemiku/Documents/Dev/Clion/STM32F401RCT6_ST7789V/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
