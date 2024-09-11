@@ -191,6 +191,11 @@ void ST7789_Init(void) {
     ST7789_Fill_Color(BLACK);                //	Fill with Black.
 }
 
+
+void ST7789_SetLED(TIM_HandleTypeDef *htim, uint32_t Channel, int compare) {
+    __HAL_TIM_SET_COMPARE(htim, Channel, compare);
+}
+
 /**
  * @brief Fill the DisplayWindow with single color
  * @param color -> color to Fill with

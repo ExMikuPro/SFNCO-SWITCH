@@ -52,7 +52,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/hatsunemiku/Documents/Dev/Clion/STM32F401RCT6_ST7789V -B/Users/hatsunemiku/Documents/Dev/Clion/STM32F401RCT6_ST7789V/cmake-build-debug
+  command = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH -B/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 

@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/hatsunemiku/Documents/Dev/Clion/STM32F401RCT6_ST7789V -B /Users/hatsunemiku/Documents/Dev/Clion/STM32F401RCT6_ST7789V/cmake-build-debug
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH -B /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/cmake-build-debug
 -- The C compiler identification is GNU 10.3.1
 -- The CXX compiler identification is GNU 10.3.1
 -- The ASM compiler identification is GNU
@@ -16,4 +16,4 @@
 -- Minimal optimization, debug info included
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/hatsunemiku/Documents/Dev/Clion/STM32F401RCT6_ST7789V/cmake-build-debug
+-- Build files have been written to: /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/cmake-build-debug

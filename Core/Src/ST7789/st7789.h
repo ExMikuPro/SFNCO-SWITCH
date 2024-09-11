@@ -144,6 +144,8 @@ extern SPI_HandleTypeDef ST7789_SPI_PORT;
 /* Basic functions. */
 void ST7789_Init(void);
 
+void ST7789_SetLED(TIM_HandleTypeDef *htim, uint32_t Channel, int compare);
+
 void ST7789_SetRotation(uint8_t m);
 
 void ST7789_Fill_Color(uint16_t color);
