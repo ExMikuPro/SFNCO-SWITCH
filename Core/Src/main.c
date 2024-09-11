@@ -22,11 +22,14 @@
 #include "i2c.h"
 #include "spi.h"
 #include "tim.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "stdio.h"
 #include "ST7789/st7789.h"
+#include "FT6336/ft6336.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -72,6 +75,20 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+int fputc(int ch, FILE *f)
+{
+  uint8_t temp[1] = {ch};
+  HAL_UART_Transmit(&huart1, temp, 1, 0xffff);
+  return ch;
+}
+
+int fgetc(FILE *f)
+{
+  uint8_t ch = 0;
+  HAL_UART_Receive(&huart1, &ch, 1, 0xffff);
+  return ch;
+}
+
 /* USER CODE END 0 */
 
 /**
@@ -105,15 +122,19 @@ int main(void) {
   MX_SPI1_Init();
   MX_TIM1_Init();
   MX_I2C1_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
+  // ST7789_SetLED_PWM(&htim1, TIM_CHANNEL_4, 100);
 
-  ST7789_SetLED_PWM(&htim1, TIM_CHANNEL_4, 100);
+  // HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
 
-  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
+  printf("hello world!\r\n");
 
-  ST7789_Init();
+//  ST7789_Init();
+//
+//  ft6336_enable();
 
-  ST7789_Test();
+  // ST7789_Test();
 
   /* USER CODE END 2 */
 
