@@ -1,135 +1,202 @@
 #include "ft6336.h"
-#include "stdio.h"
-// #include "i2c.h"
 
-#include "i2c.h"
-
-uint8_t do_i2cdetect_cmd()
+void delay_us(unsigned int x)
 {
-    uint8_t address;
-
-    printf("     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f\r\n");
-    for (int i = 0; i < 128; i += 16)
-    {
-        printf("%02x: ", i);
-        for (int j = 0; j < 16; j++)
-        {
-            fflush(stdout);
-            address = i + j;
-            uint8_t ret = HAL_I2C_IsDeviceReady(&hi2c1, (address << 1) | 1, 2, 500);
-            if (ret == HAL_OK)
-            {
-                printf("%02x ", address);
-            }
-            else if (ret == HAL_TIMEOUT)
-            {
-                printf("UU ");
-            }
-            else
-            {
-                printf("-- ");
-            }
-        }
-        printf("\r\n");
-    }
-   return 0;
-    // 		uint8_t data[8]={0};
-    // 		HAL_I2C_Mem_Read(&hi2c1,(0x38 << 1) | 1,0x85,1,data, 1,1000);
-	// 			printf("-%02X-\r\n",data[0]);
-	// 		uint8_t data2 = 0xc8;
-    // // uint8_t data23[2];
-	// 		HAL_I2C_Mem_Write(&hi2c1, (0x38 << 1) | 0, 0x85, 1, &data2, 1, 1000);
-    // //		for(int i = 0;i<1;i++)
-	// 			HAL_I2C_Mem_Read(&hi2c1,(0x38 << 1) | 1,0x85,1,data, 1,1000);
-    // 		printf("-%02X-\r\n",data[0]);
+		unsigned long i;
+		while(--x!=0){
+			i=1000;
+			while(i--);
+		}
 }
 
-void ft6336_set_sleep_time(uint8_t time)
+void IIC_Init(void)
 {
-    uint8_t data2 = time;
-    // uint8_t data23[2];
-    HAL_I2C_Mem_Write(&hi2c1, (0x38 << 1) | 0, 0x87, 1, &data2, 1, 1000);
-    // HAL_I2C_Mem_Read(&hi2c1,(0x38 << 1) | 1,0x87,1,data23, 1,1000);
-    // printf("-%02X-\r\n",data23[0]);
+    IIC_SDA(1);
+    IIC_SCL(1);  
 }
 
-/*
-0x03	1 Byte	只读(RO)	P1_XH	第1点的X坐标高4位	bit7-bit6为第1点触摸事件标志，bit3-bit0为第1点的X坐标高4位。
-0x04	1 Byte	只读(RO)	P1_XL	第1点的X坐标低8位
-0x05	1 Byte	只读(RO)	P1_YH	第1点的Y坐标高4位	bit7-bit4为第1点的ID，bit3-bit0为第1点的Y坐标高4位。
-0x06	1 Byte	只读(RO)	P1_YL	第1点的Y坐标低8位
-
-*/
-uint8_t ft6336_enable()
+void SDA_IN(void)
 {
-    uint8_t data[1] = {0};
-    HAL_I2C_Mem_Read(&hi2c1, (FT6636ADDR << 1) | 1, 0x02, 1, data, 1, 1000);
-    if (data[0] > 0)
-        return 1;
+		GPIO_InitTypeDef GPIO_Initure;
+		GPIO_Initure.Pin=FT6336_SDA;
+    GPIO_Initure.Mode=GPIO_MODE_INPUT;  
+    GPIO_Initure.Pull=GPIO_PULLUP;         
+    GPIO_Initure.Speed=GPIO_SPEED_FAST;     
+    HAL_GPIO_Init(FT6336_PORT,&GPIO_Initure);
+}
+
+void SDA_OUT(void)
+{
+		GPIO_InitTypeDef GPIO_Initure;
+		GPIO_Initure.Pin=FT6336_SDA;
+    GPIO_Initure.Mode=GPIO_MODE_OUTPUT_PP;  
+    GPIO_Initure.Pull=GPIO_PULLUP;         
+    GPIO_Initure.Speed=GPIO_SPEED_FAST;     
+    HAL_GPIO_Init(FT6336_PORT,&GPIO_Initure);
+}
+
+void IIC_Start(void)
+{
+	SDA_OUT();     
+	IIC_SDA(1);	  	  
+	IIC_SCL(1);
+	delay_us(4);
+ 	IIC_SDA(0);
+	delay_us(4);
+	IIC_SCL(0);
+}	  
+
+void IIC_Stop(void)
+{
+	SDA_OUT();
+	IIC_SCL(0);
+	IIC_SDA(0);
+ 	delay_us(4);
+	IIC_SCL(1); 
+	delay_us(4);			
+	IIC_SDA(1);  	
+}
+
+unsigned char IIC_Wait_Ack(void)
+{
+	unsigned char ucErrTime=0;
+	SDA_IN();     
+	IIC_SDA(1);delay_us(1);	   
+	IIC_SCL(1);delay_us(1);	 
+	while(READ_SDA)
+	{
+		ucErrTime++;
+		if(ucErrTime>250)
+		{
+			IIC_Stop();
+			return 1;
+		}
+	}
+	IIC_SCL(0); 
+	return 0;  
+} 
+
+void IIC_Ack(void)
+{
+	IIC_SCL(0);
+	SDA_OUT();
+	IIC_SDA(0);
+	delay_us(2);
+	IIC_SCL(1);
+	delay_us(2);
+	IIC_SCL(0);
+}
+	    
+void IIC_NAck(void)
+{
+	IIC_SCL(0);
+	SDA_OUT();
+	IIC_SDA(1);
+	delay_us(2);
+	IIC_SCL(1);
+	delay_us(2);
+	IIC_SCL(0);
+}					 				     
+
+void IIC_Send_Byte(unsigned char txd)
+{                        
+    unsigned char t;   
+	SDA_OUT(); 	    
+    IIC_SCL(0);
+    for(t=0;t<8;t++)
+    {              
+        IIC_SDA((txd&0x80)>>7);
+        txd<<=1; 	  
+		delay_us(2);  
+		IIC_SCL(1);
+		delay_us(2); 
+		IIC_SCL(0);	
+		delay_us(2);
+    }	 
+} 	    
+
+unsigned char IIC_Read_Byte(unsigned char ack)
+{
+	unsigned char i,receive=0;
+	SDA_IN();
+    for(i=0;i<8;i++ )
+	{
+        IIC_SCL(0); 
+        delay_us(2);
+		IIC_SCL(1);
+        receive<<=1;
+        if(READ_SDA)receive++;   
+		delay_us(1); 
+    }					 
+    if (!ack)
+        IIC_NAck();
     else
-        return 0;
+        IIC_Ack();  
+    return receive;
 }
 
-void ft6336_read_xy(uint16_t *x, uint16_t *y)
+unsigned char ft6336_write_byte(unsigned char addr,unsigned char reg,unsigned char data)
 {
-    uint8_t data[4] = {0};
-
-    HAL_I2C_Mem_Read_DMA(&hi2c1, (FT6636ADDR << 1) | 1, 0x03, 1, data, 4);
-
-    while (HAL_I2C_IsDeviceReady(&hi2c1, (FT6636ADDR << 1) | 1, 2, 50))
-        ;
-    ////		printf("-%02x-%02x-%02x-%02x", data[0], data[1],data[2],data[3]);
-    //		for(int i=0;i<100;i++)
-    //			for(int j=0;j<100;j++)
-    //				for(int j=0;j<10;j++);
-
-    //		HAL_I2C_Mem_Read(&hi2c1, (FT6636ADDR << 1) | 1, 0x03, 1, data, 4,1000);
-    *x = ((data[2] & 0x0f) << 8) + data[3];
-    *y = 240 - ((data[0] & 0x0f) << 8 | data[1]);
-//		*y = (((data[0] & 0x0f) << 8) + data[1]);
-    printf("x: %d, y: %d\r\n", *x, *y);
-
-    //    printf("\r\n");
-    //		return data;
-}
-uint16_t ft6336_read_x()
-{
-    uint8_t data[2] = {0};
-    uint8_t data2[2] = {0};
-
-    uint8_t ret_x = HAL_I2C_Mem_Read_DMA(&hi2c1, (FT6636ADDR << 1) | 1, 0x05, 1, data, 2);
-    //    HAL_I2C_Mem_Read(&hi2c1, (FT6636ADDR << 1) | 1, 0x06, 1, data2, 1,1000);
-    //		printf("x:-%d-\r\n",ret_x);
-    //		HAL_Delay(1);
-    for (int i = 0; i < 100; i++)
-        for (int j = 0; j < 100; j++)
-            ;
-    uint16_t x = (data[0] & 0x0f) << 8 | data[1];
-    printf("x: %d ", x);
-    return x;
-}
-uint16_t ft6336_read_y()
-{
-    uint8_t data3[2] = {0};
-    uint8_t data4[2] = {0};
-    uint8_t ret_x, ret_y;
-    ret_x = HAL_I2C_Mem_Read_DMA(&hi2c1, (FT6636ADDR << 1) | 1, 0x03, 1, data3, 2);
-    //    ret_y = HAL_I2C_Mem_Read_DMA(&hi2c1, (FT6636ADDR << 1) | 1, 0x04, 1, data4, 1);
-    printf("-%d-%d-\r\n", ret_x, ret_y);
-    uint16_t y = (data3[0] & 0x0f) << 8 | data3[1];
-    printf("\r\n");
-    for (int i = 7; i >= 0; i--)
+    IIC_Start();
+    IIC_Send_Byte((addr<<1)|0); 
+    if(IIC_Wait_Ack())          
     {
-        printf("%d", (data3[0] >> i) & 0x01);
+        IIC_Stop();
+        return 1;
     }
-    printf(" ");
-    for (int i = 7; i >= 0; i--)
+    IIC_Send_Byte(reg);         
+    IIC_Wait_Ack();             
+    IIC_Send_Byte(data);        
+    if(IIC_Wait_Ack())          
     {
-        printf("%d", (data3[1] >> i) & 0x01);
+        IIC_Stop();
+        return 1;
     }
-    printf(" ");
-    y = 240 - y;
-    printf("y: %d,data3[0]:%02x,data4[0]:%02x", y, data3[0], data4[0]);
-    printf("\r\n");
-    return y;
+    IIC_Stop();
+    return 0;
+}
+
+unsigned char ft6336_read_byte(unsigned char addr,unsigned char reg)
+{
+    unsigned char res;
+    IIC_Start();
+    IIC_Send_Byte((addr<<1)|0); 
+    IIC_Wait_Ack();             
+    IIC_Send_Byte(reg);         
+    IIC_Wait_Ack();             
+	  IIC_Start();                
+    IIC_Send_Byte((addr<<1)|1); 
+    IIC_Wait_Ack();             
+    res=IIC_Read_Byte(0);		
+    IIC_Stop();                 
+    return res;  
+}
+
+unsigned char ft6336_get_td_status(void)
+{
+		unsigned char a;
+		a=ft6336_read_byte(FT6336_ADDR,FT6336_ADDR_TD_STATUS);
+		return a;
+}
+
+void ft6336_get_touch1_position(unsigned int *x,unsigned int *y)
+{
+		unsigned int xh=0,xl=0,yh=0,yl=0;
+		xh=ft6336_read_byte(FT6336_ADDR,FT6336_ADDR_TOUCH1_XH);
+		xl=ft6336_read_byte(FT6336_ADDR,FT6336_ADDR_TOUCH1_XL);
+		yh=ft6336_read_byte(FT6336_ADDR,FT6336_ADDR_TOUCH1_YH);
+		yl=ft6336_read_byte(FT6336_ADDR,FT6336_ADDR_TOUCH1_YL);
+		*x=((xh&0x000F)<<8)|xl;
+		*y=((yh&0x000F)<<8)|yl;
+}
+
+void ft6336_get_touch2_position(unsigned int *x,unsigned int *y)
+{
+		unsigned int xh=0,xl=0,yh=0,yl=0;
+		xh=ft6336_read_byte(FT6336_ADDR,FT6336_ADDR_TOUCH2_XH);
+		xl=ft6336_read_byte(FT6336_ADDR,FT6336_ADDR_TOUCH2_XL);
+		yh=ft6336_read_byte(FT6336_ADDR,FT6336_ADDR_TOUCH2_YH);
+		yl=ft6336_read_byte(FT6336_ADDR,FT6336_ADDR_TOUCH2_YL);
+		*x=((xh&0x000F)<<8)|xl;
+		*y=((yh&0x000F)<<8)|yl;
 }

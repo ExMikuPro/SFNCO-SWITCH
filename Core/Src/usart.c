@@ -102,6 +102,7 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
     PA10     ------> USART1_RX
     */
     HAL_GPIO_DeInit(GPIOA, GPIO_PIN_9|GPIO_PIN_10);
+    // huart1.Instance->BRR = 62.5 * 16;
 
   /* USER CODE BEGIN USART1_MspDeInit 1 */
 
