@@ -1,5 +1,6 @@
 #include "fonts.h"
 #include "main.h"
+#include "tim.h"
 
 /* choose a Hardware SPI port to use. */
 #define ST7789_SPI_PORT hspi1
@@ -12,14 +13,14 @@ extern SPI_HandleTypeDef ST7789_SPI_PORT;
 //#define CFG_NO_CS
 
 /* Pin connection*/
-#define ST7789_RST_PORT RST_GPIO_Port
-#define ST7789_RST_PIN  RST_Pin
-#define ST7789_DC_PORT  DC_GPIO_Port
-#define ST7789_DC_PIN   DC_Pin
+#define ST7789_RST_PORT DISPLAY_RST_GPIO_Port
+#define ST7789_RST_PIN  DISPLAY_RST_Pin
+#define ST7789_DC_PORT  DISPLAY_DC_GPIO_Port
+#define ST7789_DC_PIN   DISPLAY_DC_Pin
 
 #ifndef CFG_NO_CS
-#define ST7789_CS_PORT  CS_GPIO_Port
-#define ST7789_CS_PIN   CS_Pin
+#define ST7789_CS_PORT  DISPLAY_CS_GPIO_Port
+#define ST7789_CS_PIN   DISPLAY_CS_Pin
 #endif
 
 /* If u need Backlight control, uncomment below */
@@ -42,7 +43,7 @@ extern SPI_HandleTypeDef ST7789_SPI_PORT;
 /* Choose a display rotation you want to use: (0-3) */
 //#define ST7789_ROTATION 0
 //#define ST7789_ROTATION 1
-#define ST7789_ROTATION 3                //  use Normally on 240x240
+#define ST7789_ROTATION 1                //  use Normally on 240x240
 //#define ST7789_ROTATION 3
 
 #define ST7789_WIDTH 320

@@ -53,7 +53,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Core/Src/FT6336/ft6336.c.obj: C_COMPILER__
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/FT6336/ft6336.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/FT6336
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -63,7 +63,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Core/Src/ST7789/fonts.c.obj: C_COMPILER__S
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/ST7789/fonts.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/ST7789
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -73,9 +73,19 @@ build CMakeFiles/STM32F401-t1.elf.dir/Core/Src/ST7789/st7789.c.obj: C_COMPILER__
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/ST7789/st7789.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/ST7789
+  TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
+  TARGET_PDB = STM32F401-t1.elf.pdb
+
+build CMakeFiles/STM32F401-t1.elf.dir/Core/Src/adc.c.obj: C_COMPILER__STM32F401-t1.2eelf_Debug /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Src/adc.c || cmake_object_order_depends_target_STM32F401-t1.elf
+  DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/adc.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
+  OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
   TARGET_PDB = STM32F401-t1.elf.pdb
 
@@ -83,7 +93,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Core/Src/dma.c.obj: C_COMPILER__STM32F401-
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/dma.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -93,7 +103,17 @@ build CMakeFiles/STM32F401-t1.elf.dir/Core/Src/gpio.c.obj: C_COMPILER__STM32F401
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/gpio.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
+  OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Core/Src
+  TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
+  TARGET_PDB = STM32F401-t1.elf.pdb
+
+build CMakeFiles/STM32F401-t1.elf.dir/Core/Src/i2c.c.obj: C_COMPILER__STM32F401-t1.2eelf_Debug /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Src/i2c.c || cmake_object_order_depends_target_STM32F401-t1.elf
+  DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/i2c.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -103,7 +123,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Core/Src/main.c.obj: C_COMPILER__STM32F401
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/main.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -113,7 +133,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Core/Src/spi.c.obj: C_COMPILER__STM32F401-
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/spi.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -123,7 +143,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: C_COMPIL
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -133,7 +153,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Core/Src/stm32f4xx_it.c.obj: C_COMPILER__S
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/stm32f4xx_it.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -143,7 +163,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Core/Src/syscalls.c.obj: C_COMPILER__STM32
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/syscalls.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -153,7 +173,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Core/Src/sysmem.c.obj: C_COMPILER__STM32F4
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/sysmem.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -163,7 +183,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Core/Src/system_stm32f4xx.c.obj: C_COMPILE
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/system_stm32f4xx.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -173,7 +193,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Core/Src/tim.c.obj: C_COMPILER__STM32F401-
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/tim.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -183,7 +203,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Core/Src/usart.c.obj: C_COMPILER__STM32F40
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Core/Src/usart.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -193,7 +213,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Core/Startup/startup_stm32f401rctx.s.obj: 
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Core/Startup/startup_stm32f401rctx.s.obj.d
   FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -x assembler-with-cpp -Og -g
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Core/Startup
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -203,7 +223,27 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
+  OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
+  TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
+  TARGET_PDB = STM32F401-t1.elf.pdb
+
+build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj: C_COMPILER__STM32F401-t1.2eelf_Debug /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c || cmake_object_order_depends_target_STM32F401-t1.elf
+  DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
+  OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
+  TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
+  TARGET_PDB = STM32F401-t1.elf.pdb
+
+build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj: C_COMPILER__STM32F401-t1.2eelf_Debug /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c || cmake_object_order_depends_target_STM32F401-t1.elf
+  DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -213,7 +253,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -223,7 +263,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -233,7 +273,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -243,7 +283,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -253,7 +293,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -263,7 +303,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -273,7 +313,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -283,7 +323,27 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
+  OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
+  TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
+  TARGET_PDB = STM32F401-t1.elf.pdb
+
+build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj: C_COMPILER__STM32F401-t1.2eelf_Debug /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c || cmake_object_order_depends_target_STM32F401-t1.elf
+  DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
+  OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
+  TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
+  TARGET_PDB = STM32F401-t1.elf.pdb
+
+build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj: C_COMPILER__STM32F401-t1.2eelf_Debug /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c || cmake_object_order_depends_target_STM32F401-t1.elf
+  DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -293,7 +353,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -303,7 +363,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -313,7 +373,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -323,7 +383,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -333,7 +393,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -343,7 +403,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -353,7 +413,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
@@ -363,9 +423,79 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
+  TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
+  TARGET_PDB = STM32F401-t1.elf.pdb
+
+build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj: C_COMPILER__STM32F401-t1.2eelf_Debug /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c || cmake_object_order_depends_target_STM32F401-t1.elf
+  DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
+  OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
+  TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
+  TARGET_PDB = STM32F401-t1.elf.pdb
+
+build CMakeFiles/STM32F401-t1.elf.dir/FATFS/App/fatfs.c.obj: C_COMPILER__STM32F401-t1.2eelf_Debug /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App/fatfs.c || cmake_object_order_depends_target_STM32F401-t1.elf
+  DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/FATFS/App/fatfs.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
+  OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/FATFS/App
+  TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
+  TARGET_PDB = STM32F401-t1.elf.pdb
+
+build CMakeFiles/STM32F401-t1.elf.dir/FATFS/Target/user_diskio.c.obj: C_COMPILER__STM32F401-t1.2eelf_Debug /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target/user_diskio.c || cmake_object_order_depends_target_STM32F401-t1.elf
+  DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/FATFS/Target/user_diskio.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
+  OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/FATFS/Target
+  TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
+  TARGET_PDB = STM32F401-t1.elf.pdb
+
+build CMakeFiles/STM32F401-t1.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj: C_COMPILER__STM32F401-t1.2eelf_Debug /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src/diskio.c || cmake_object_order_depends_target_STM32F401-t1.elf
+  DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
+  OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Middlewares/Third_Party/FatFs/src
+  TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
+  TARGET_PDB = STM32F401-t1.elf.pdb
+
+build CMakeFiles/STM32F401-t1.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj: C_COMPILER__STM32F401-t1.2eelf_Debug /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src/ff.c || cmake_object_order_depends_target_STM32F401-t1.elf
+  DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
+  OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Middlewares/Third_Party/FatFs/src
+  TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
+  TARGET_PDB = STM32F401-t1.elf.pdb
+
+build CMakeFiles/STM32F401-t1.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj: C_COMPILER__STM32F401-t1.2eelf_Debug /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c || cmake_object_order_depends_target_STM32F401-t1.elf
+  DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
+  OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Middlewares/Third_Party/FatFs/src
+  TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
+  TARGET_PDB = STM32F401-t1.elf.pdb
+
+build CMakeFiles/STM32F401-t1.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj: C_COMPILER__STM32F401-t1.2eelf_Debug /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src/option/syscall.c || cmake_object_order_depends_target_STM32F401-t1.elf
+  DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/STM32F401-t1.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Drivers/CMSIS/Include -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/Target -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/FATFS/App -I/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Middlewares/Third_Party/FatFs/src
+  OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM32F401-t1.elf.dir/Middlewares/Third_Party/FatFs/src/option
   TARGET_COMPILE_PDB = CMakeFiles/STM32F401-t1.elf.dir/
   TARGET_PDB = STM32F401-t1.elf.pdb
 
@@ -377,7 +507,7 @@ build CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 #############################################
 # Link the executable STM32F401-t1.elf
 
-build STM32F401-t1.elf: C_EXECUTABLE_LINKER__STM32F401-t1.2eelf_Debug CMakeFiles/STM32F401-t1.elf.dir/Core/Src/FT6336/ft6336.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/ST7789/fonts.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/ST7789/st7789.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/dma.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/gpio.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/main.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/spi.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/stm32f4xx_it.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/syscalls.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/sysmem.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/system_stm32f4xx.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/tim.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/usart.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Startup/startup_stm32f401rctx.s.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+build STM32F401-t1.elf: C_EXECUTABLE_LINKER__STM32F401-t1.2eelf_Debug CMakeFiles/STM32F401-t1.elf.dir/Core/Src/FT6336/ft6336.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/ST7789/fonts.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/ST7789/st7789.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/adc.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/dma.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/gpio.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/i2c.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/main.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/spi.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/stm32f4xx_it.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/syscalls.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/sysmem.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/system_stm32f4xx.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/tim.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Src/usart.c.obj CMakeFiles/STM32F401-t1.elf.dir/Core/Startup/startup_stm32f401rctx.s.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj CMakeFiles/STM32F401-t1.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj CMakeFiles/STM32F401-t1.elf.dir/FATFS/App/fatfs.c.obj CMakeFiles/STM32F401-t1.elf.dir/FATFS/Target/user_diskio.c.obj CMakeFiles/STM32F401-t1.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj CMakeFiles/STM32F401-t1.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj CMakeFiles/STM32F401-t1.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj CMakeFiles/STM32F401-t1.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj
   FLAGS = -g
   LINK_FLAGS = -Wl,-gc-sections,--print-memory-usage,-Map=/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/cmake-build-debug/STM32F401-t1.map -mcpu=cortex-m4 -mthumb -mthumb-interwork -T /Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/STM32F401RCTX_FLASH.ld
   OBJECT_DIR = CMakeFiles/STM32F401-t1.elf.dir

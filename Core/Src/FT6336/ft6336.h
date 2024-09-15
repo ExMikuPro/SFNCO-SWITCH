@@ -33,11 +33,18 @@
 #define FT6336_ADDR_FIRMARE_ID    0xA6
 
 void IIC_Init(void);
-unsigned char ft6336_write_byte(unsigned char addr,unsigned char reg,unsigned char data);
-unsigned char ft6336_read_byte(unsigned char addr,unsigned char reg);
+
+unsigned char ft6336_write_byte(unsigned char addr, unsigned char reg, unsigned char data);
+
+unsigned char ft6336_read_byte(unsigned char addr, unsigned char reg);
+
 unsigned char ft6336_get_td_status(void);
-void ft6336_get_touch1_position(unsigned int *x,unsigned int *y);
-void ft6336_get_touch2_position(unsigned int *x,unsigned int *y);
+
+void ft6336_get_touch1_position(unsigned int *x, unsigned int *y);
+
+void ft6336_get(uint8_t *xh, uint8_t *xl, uint8_t *yh, uint8_t *yl);
+
+void ft6336_get_touch2_position(unsigned int *x, unsigned int *y);
 
 #endif
 

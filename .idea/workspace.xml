@@ -20,23 +20,31 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08174d61-ac66-4b01-aed8-9ec8e7359edd" name="更改" comment="feat: 添加printf()重定向">
+    <list default="true" id="08174d61-ac66-4b01-aed8-9ec8e7359edd" name="更改" comment="fix: 修正uart1重定向">
+      <change beforePath="$PROJECT_DIR$/.cproject" beforeDir="false" afterPath="$PROJECT_DIR$/.cproject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/i2c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/spi.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/spi.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f4xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f4xx_hal_conf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/tim.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/tim.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/usart.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/usart.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/FT6336/ft6336.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/FT6336/ft6336.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/FT6336/ft6336.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/FT6336/ft6336.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/ST7789/fonts.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/ST7789/fonts.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/ST7789/fonts.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/ST7789/fonts.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/ST7789/st7789.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/ST7789/st7789.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/ST7789/st7789.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/ST7789/st7789.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/gpio.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/i2c.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/spi.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/spi.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/tim.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/tim.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/usart.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/usart.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_i2c.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/STM32F401_ST7789V.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/STM32F401_ST7789V.ioc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
@@ -87,34 +95,35 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;lvgl&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Src/FT6336&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Src&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;clion.platformio.config&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Core/Src/FT6336" />
       <recent name="$PROJECT_DIR$/Core/Src" />
+      <recent name="$PROJECT_DIR$/Core/Src/FT6336" />
       <recent name="$PROJECT_DIR$/Drivers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Core/Src/FT6336" />
       <recent name="$PROJECT_DIR$/Core/Src" />
+      <recent name="$PROJECT_DIR$/Core/Inc" />
+      <recent name="$PROJECT_DIR$/Core/Src/FT6336" />
     </key>
   </component>
-  <component name="RunManager" selected="OpenOCD 下载并运行.OCD STM32F401-t1">
-    <configuration name="STM32F401-t1.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="STM32F401-t1" TARGET_NAME="STM32F401-t1.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="STM32F401-t1" RUN_TARGET_NAME="STM32F401-t1.elf">
+  <component name="RunManager" selected="OpenOCD 下载并运行.OCD STM32F401_ST7789V">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="STM32F401-t1.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="STM32F401-t1" TARGET_NAME="STM32F401-t1.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="STM32F401-t1" RUN_TARGET_NAME="STM32F401-t1.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -147,6 +156,12 @@
       <workItem from="1725809334309" duration="8611000" />
       <workItem from="1725873632928" duration="392000" />
       <workItem from="1726111325091" duration="4766000" />
+      <workItem from="1726233052725" duration="206000" />
+      <workItem from="1726233261854" duration="59000" />
+      <workItem from="1726233322920" duration="1584000" />
+      <workItem from="1726234939076" duration="699000" />
+      <workItem from="1726237002599" duration="2424000" />
+      <workItem from="1726403580307" duration="8264000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 添加屏幕PWM调光">
       <option name="closed" value="true" />
@@ -196,5 +211,9 @@
     <MESSAGE value="feat: 添加屏幕PWM调光" />
     <MESSAGE value="feat: 添加printf()重定向" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: 添加printf()重定向" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

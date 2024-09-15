@@ -127,9 +127,7 @@ static void ST7789_SetAddressWindow(uint16_t x0, uint16_t y0, uint16_t x1, uint1
  * @return none
  */
 void ST7789_Init(void) {
-#ifdef USE_DMA
   memset(disp_buf, 0, sizeof(disp_buf));
-#endif
   HAL_Delay(10);
   ST7789_RST_Clr();
   HAL_Delay(10);
@@ -139,6 +137,8 @@ void ST7789_Init(void) {
 //    ST7789_WriteCommand(ST7789_COLMOD);		//	Set color mode
 //    ST7789_WriteSmallData(ST7789_COLOR_MODE_16bit);
 
+  ST7789_WriteCommand(0x11);
+  HAL_Delay(120);
   ST7789_WriteCommand(0x36);
   ST7789_WriteSmallData(0x00);
   ST7789_WriteCommand(0x3a);
@@ -155,13 +155,13 @@ void ST7789_Init(void) {
   ST7789_WriteCommand(0XB7);                //	Gate Control
   ST7789_WriteSmallData(0x35);            //	Default value
   ST7789_WriteCommand(0xBB);                //	VCOM setting
-  ST7789_WriteSmallData(0x19);            //	0.725v (default 0.75v for 0x20)
+  ST7789_WriteSmallData(0x28);            //	0.725v (default 0.75v for 0x20)
   ST7789_WriteCommand(0xC0);                //	LCMCTRL
   ST7789_WriteSmallData(0x2C);            //	Default value
   ST7789_WriteCommand(0xC2);                //	VDV and VRH command Enable
   ST7789_WriteSmallData(0x01);            //	Default value
   ST7789_WriteCommand(0xC3);                //	VRH set
-  ST7789_WriteSmallData(0x12);            //	+-4.45v (defalut +-4.1v for 0x0B)
+  ST7789_WriteSmallData(0x0B);            //	+-4.45v (defalut +-4.1v for 0x0B)
   ST7789_WriteCommand(0xC4);                //	VDV set
   ST7789_WriteSmallData(0x20);            //	Default value
   ST7789_WriteCommand(0xC6);                //	Frame rate control in normal mode
@@ -173,7 +173,8 @@ void ST7789_Init(void) {
 
   ST7789_WriteCommand(0xE0);
   {
-    uint8_t data[] = {0xD0, 0x04, 0x0D, 0x11, 0x13, 0x2B, 0x3F, 0x54, 0x4C, 0x18, 0x0D, 0x0B, 0x1F, 0x23};
+    uint8_t data[] = {0xD0, 0x01, 0x08, 0x0F, 0x11, 0x2A, 0x36, 0x55, 0x44, 0x3A, 0x0B, 0x06, 0x11, 0x20, 0xE1, 0xD0,
+                      0x02, 0x07, 0x0A, 0x0B, 0x18, 0x34, 0x43, 0x4A, 0x2B, 0x1B, 0x1C, 0x22, 0x1F, 0x29};
     ST7789_WriteData(data, sizeof(data));
   }
 
@@ -189,6 +190,9 @@ void ST7789_Init(void) {
 
   HAL_Delay(50);
   ST7789_Fill_Color(BLACK);                //	Fill with Black.
+  ST7789_InvertColors(0);
+
+  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
 }
 
 void ST7789_SetLED_PWM(TIM_HandleTypeDef *htim, uint32_t Channel, int compare) {
@@ -729,6 +733,6 @@ void ST7789_Test(void) {
 
   //	If FLASH cannot storage anymore datas, please delete codes below.
   ST7789_Fill_Color(WHITE);
-  ST7789_DrawImage(0, 0, 128, 128, (uint16_t *) saber);
+  // ST7789_DrawImage(0, 0, 128, 128, (uint16_t *) saber);
   HAL_Delay(3000);
 }

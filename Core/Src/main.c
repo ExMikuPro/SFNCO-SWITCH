@@ -18,7 +18,10 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "adc.h"
 #include "dma.h"
+#include "fatfs.h"
+#include "i2c.h"
 #include "spi.h"
 #include "tim.h"
 #include "usart.h"
@@ -63,6 +66,16 @@ _lcd_dev lcddev;
 
 /* USER CODE BEGIN PV */
 
+//FATFS fs;
+//FATFS *pfs;
+//FIL fil;
+//FRESULT fres;
+//DWORD fre_clust;
+uint32_t totalSpace, freeSpace;
+char buffer[100];
+
+uint32_t adc_values[2] = {0};
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -74,16 +87,11 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-int fputc(int ch, FILE *f) {
-  uint8_t temp[1] = {ch};
-  HAL_UART_Transmit(&huart1, temp, 1, 0xffff);
-  return ch;
-}
 
-int fgetc(FILE *f) {
-  uint8_t ch = 0;
-  HAL_UART_Receive(&huart1, &ch, 1, 0xffff);
-  return ch;
+float smoothstep(float x) {
+  // 将x限制在0到1之间
+  // 计算smoothstep值
+  return x * x * (3 - 2 * x);
 }
 
 /* USER CODE END 0 */
@@ -119,20 +127,39 @@ int main(void) {
   MX_SPI1_Init();
   MX_TIM1_Init();
   MX_USART1_UART_Init();
+  MX_FATFS_Init();
+  MX_SPI2_Init();
+  MX_USART6_UART_Init();
+  MX_ADC1_Init();
+  MX_I2C3_Init();
+  MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
-  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
-  ST7789_SetLED_PWM(&htim1, TIM_CHANNEL_4, 99);
-
-  // printf("hello world!\r\n");
-
-  // IIC_Init();
+  IIC_Init();
 
   ST7789_Init();
-  // uint8_t data[] = {0x36};
+  ST7789_SetLED_PWM(&htim1, TIM_CHANNEL_4, 99);
 
-  ST7789_Test();
+  // HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
 
-  // printf("ok\r\n");
+  // ST7789_Fill_Color(WHITE);
+
+  // ST7789_DrawLine(26, 200, 292, 200, BLACK);
+
+
+  // ST7789_DrawImage(0, 0, 240, 240, knky);
+  //  ST7789_Test();
+
+//  if (f_mount(&fs, "", 0) != FR_OK) {
+//    // ST7789_WriteString(20, 20, "OK", Font_11x18, RED, BLACK);
+//    HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
+//  } else {
+//    // ST7789_WriteString(20, 20, "ERR", Font_11x18, RED, BLACK);
+//    HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
+//  }
+
+
+
+  // HAL_ADC_Start(&hadc1);
 
 
   /* USER CODE END 2 */
@@ -140,14 +167,44 @@ int main(void) {
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1) {
+
+    // HAL_ADC_Start_DMA(&hadc1, adc_values, 5);
+    for (int i = 0; i < 2; i++) {
+      HAL_ADC_Start(&hadc1);
+      if (HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY) == HAL_OK) {
+        adc_values[i] = HAL_ADC_GetValue(&hadc1);
+      }
+    }
+    int xy[2] = {0};
+
+    for (int i = 0; i < 2; i++) {
+      char data[10];
+
+      float voltage = (float) adc_values[i] / 4000 * 100;
+      // float voltage = (float) adc_values[i];
+      snprintf(data, sizeof(data), "%f", voltage);
+      ST7789_WriteString(10, 30 * i, data, Font_16x26, WHITE, BLACK);
+      xy[i] = (int) voltage - 47;
+    }
+
+    // ST7789_Fill_Color(BLACK);
+    // ST7789_DrawFilledRectangle(150, 150, 100, 100, BLACK);
+    if (xy[0] < 0) {
+      xy[0] = xy[0] * -1;
+    }
+    if (xy[1] < 0) {
+      xy[1] = xy[1] * -1 ;
+    }
+
+    ST7789_DrawRectangle(150, 150, xy[1], xy[0], RED);
+    HAL_Delay(70);
+    ST7789_DrawRectangle(150, 150, xy[1], xy[0], BLACK);
+
+    // HAL_Delay(10);
+
+
     /* USER CODE END WHILE */
-//    ft6336_get_touch1_position(&x, &y);
-//    ST7789_WriteString(10, 20, "h", Font_11x18, RED, WHITE);
-//
-//    ST7789_DrawCircle(x,y,30,RED);
-//
-//    printf("x: %d,y:%d\r\n",x,y);
-//    HAL_Delay(500);
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
