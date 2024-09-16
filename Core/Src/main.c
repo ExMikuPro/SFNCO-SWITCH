@@ -32,6 +32,9 @@
 #include "stdio.h"
 #include "ST7789/st7789.h"
 #include "FT6336/ft6336.h"
+#include "arm_math.h"
+
+#include "ADC/adc.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -74,7 +77,12 @@ _lcd_dev lcddev;
 uint32_t totalSpace, freeSpace;
 char buffer[100];
 
-uint32_t adc_values[2] = {0};
+uint16_t data[7] = {0};
+
+float da = 0;
+
+uint32_t adc_values[30] = {0};
+uint32_t adc1, adc2, adc3, adc4, adc5, adc6, adc7;
 
 /* USER CODE END PV */
 
@@ -134,10 +142,15 @@ int main(void) {
   MX_I2C3_Init();
   MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
+  US_ADC_Init(&hadc1);
+
   IIC_Init();
 
   ST7789_Init();
   ST7789_SetLED_PWM(&htim1, TIM_CHANNEL_4, 99);
+
+//  static float rests;
+//  rests = arm_sin_f32(PI / 6.0f);
 
   // HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
 
@@ -157,52 +170,31 @@ int main(void) {
 //    HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
 //  }
 
-
-
-  // HAL_ADC_Start(&hadc1);
-
-
+  int x, y, temp;
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1) {
 
-    // HAL_ADC_Start_DMA(&hadc1, adc_values, 5);
-    for (int i = 0; i < 2; i++) {
-      HAL_ADC_Start(&hadc1);
-      if (HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY) == HAL_OK) {
-        adc_values[i] = HAL_ADC_GetValue(&hadc1);
-      }
-    }
-    int xy[2] = {0};
+    getXY(&x, &y);
+    getTemp(&temp);
+    HAL_Delay(100);
+    char d[30] = "";
+    da = x * 3.3f / 4096.0f;
+    sprintf(d, "%.2f", da);
 
-    for (int i = 0; i < 2; i++) {
-      char data[10];
+    ST7789_WriteString(200, 200, d, Font_7x10, WHITE, BLACK);
 
-      float voltage = (float) adc_values[i] / 4000 * 100;
-      // float voltage = (float) adc_values[i];
-      snprintf(data, sizeof(data), "%f", voltage);
-      ST7789_WriteString(10, 30 * i, data, Font_16x26, WHITE, BLACK);
-      xy[i] = (int) voltage - 47;
-    }
+    da = y * 3.3f / 4096.0f;
+    sprintf(d, "%.2f", da);
+    ST7789_WriteString(200, 220, d, Font_7x10, WHITE, BLACK);
 
-    // ST7789_Fill_Color(BLACK);
-    // ST7789_DrawFilledRectangle(150, 150, 100, 100, BLACK);
-    if (xy[0] < 0) {
-      xy[0] = xy[0] * -1;
-    }
-    if (xy[1] < 0) {
-      xy[1] = xy[1] * -1 ;
-    }
-
-    ST7789_DrawRectangle(150, 150, xy[1], xy[0], RED);
-    HAL_Delay(70);
-    ST7789_DrawRectangle(150, 150, xy[1], xy[0], BLACK);
-
-    // HAL_Delay(10);
-
-
+    da = (double) temp * 3.3f / 4096.0f;
+//    float temperate = (1.43 - da) / 0.0043 + 25;
+//    temperate *= 100;
+    sprintf(d, "%f", da);
+    ST7789_WriteString(20, 20, d, Font_7x10, BLUE, BLACK);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -235,7 +227,7 @@ void SystemClock_Config(void) {
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV4;
   RCC_OscInitStruct.PLL.PLLQ = 4;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
-    Error_Handler();
+    // Error_Handler();
   }
 
   /** Initializes the CPU, AHB and APB buses clocks

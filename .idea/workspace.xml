@@ -20,31 +20,20 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08174d61-ac66-4b01-aed8-9ec8e7359edd" name="更改" comment="fix: 修正uart1重定向">
+    <list default="true" id="08174d61-ac66-4b01-aed8-9ec8e7359edd" name="更改" comment="feat: 添加ADC摇杆">
+      <change afterPath="$PROJECT_DIR$/Core/Src/ADC/adc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STM32F401.svd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.cproject" beforeDir="false" afterPath="$PROJECT_DIR$/.cproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/OCD_STM32F401_t1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/OCD_STM32F401_t1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/spi.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/spi.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f4xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f4xx_hal_conf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/tim.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/tim.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/usart.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/usart.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/FT6336/ft6336.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/FT6336/ft6336.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/FT6336/ft6336.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/FT6336/ft6336.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/ST7789/fonts.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/ST7789/fonts.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/ST7789/fonts.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/ST7789/fonts.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/ST7789/st7789.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/ST7789/st7789.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/ST7789/st7789.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/ST7789/st7789.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/gpio.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists_template.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists_template.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f4xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f4xx_it.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/adc.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/adc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/dma.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/dma.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/spi.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/spi.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/tim.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/tim.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/usart.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/usart.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/stm32f4xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f4xx_it.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/STM32F401_ST7789V.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/STM32F401_ST7789V.ioc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
@@ -64,6 +53,254 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="EmbeddedSvdWindowState">
+    <option name="columnWidths">
+      <list>
+        <option value="212" />
+        <option value="92" />
+        <option value="982" />
+      </list>
+    </option>
+    <option name="columnOrder">
+      <list>
+        <option value="名称" />
+        <option value="值" />
+        <option value="描述" />
+      </list>
+    </option>
+    <option name="loadedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/STM32F401.svd" />
+      </list>
+    </option>
+    <option name="nodes">
+      <map>
+        <entry key="STM32F401.svd" value="-E" />
+        <entry key="STM32F401.svd|g:ADC" value="-E" />
+        <entry key="STM32F401.svd|g:DMA" value="-E" />
+        <entry key="STM32F401.svd|g:GPIO" value="-E" />
+        <entry key="STM32F401.svd|g:SPI" value="-E" />
+        <entry key="STM32F401.svd|g:TIM" value="-E" />
+        <entry key="STM32F401.svd|g:USART" value="-E" />
+        <entry key="STM32F401.svd|p:ADC1" value="-E" />
+        <entry key="STM32F401.svd|p:ADC1|CR1" value="HE" />
+        <entry key="STM32F401.svd|p:ADC1|CR2" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|DR" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|HTR" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|JDR1" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|JDR2" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|JDR3" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|JDR4" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|JOFR1" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|JOFR2" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|JOFR3" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|JOFR4" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|JSQR" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|LTR" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|SMPR1" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|SMPR2" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|SQR1" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|SQR2" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|SQR3" value="HC" />
+        <entry key="STM32F401.svd|p:ADC1|SR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2" value="-E" />
+        <entry key="STM32F401.svd|p:DMA2|HIFCR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|HISR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|LIFCR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|LISR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S0CR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S0FCR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S0M0AR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S0M1AR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S0NDTR" value="HE" />
+        <entry key="STM32F401.svd|p:DMA2|S0PAR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S1CR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S1FCR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S1M0AR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S1M1AR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S1NDTR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S1PAR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S2CR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S2FCR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S2M0AR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S2M1AR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S2NDTR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S2PAR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S3CR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S3FCR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S3M0AR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S3M1AR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S3NDTR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S3PAR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S4CR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S4FCR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S4M0AR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S4M1AR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S4NDTR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S4PAR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S5CR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S5FCR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S5M0AR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S5M1AR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S5NDTR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S5PAR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S6CR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S6FCR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S6M0AR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S6M1AR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S6NDTR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S6PAR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S7CR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S7FCR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S7M0AR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S7M1AR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S7NDTR" value="HC" />
+        <entry key="STM32F401.svd|p:DMA2|S7PAR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOA" value="-E" />
+        <entry key="STM32F401.svd|p:GPIOA|AFRH" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOA|AFRL" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOA|BSRR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOA|IDR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOA|LCKR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOA|MODER" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOA|ODR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOA|OSPEEDR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOA|OTYPER" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOA|PUPDR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOB" value="-E" />
+        <entry key="STM32F401.svd|p:GPIOB|AFRH" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOB|AFRL" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOB|BSRR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOB|IDR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOB|LCKR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOB|MODER" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOB|ODR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOB|OSPEEDR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOB|OTYPER" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOB|PUPDR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOC" value="-E" />
+        <entry key="STM32F401.svd|p:GPIOC|AFRH" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOC|AFRL" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOC|BSRR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOC|IDR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOC|LCKR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOC|MODER" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOC|ODR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOC|OSPEEDR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOC|OTYPER" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOC|PUPDR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOD" value="-E" />
+        <entry key="STM32F401.svd|p:GPIOD|AFRH" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOD|AFRL" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOD|BSRR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOD|IDR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOD|LCKR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOD|MODER" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOD|ODR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOD|OSPEEDR" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOD|OTYPER" value="HC" />
+        <entry key="STM32F401.svd|p:GPIOD|PUPDR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC" value="-E" />
+        <entry key="STM32F401.svd|p:RCC|AHB1ENR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|AHB1LPENR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|AHB1RSTR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|AHB2ENR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|AHB2LPENR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|AHB2RSTR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|APB1ENR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|APB1LPENR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|APB1RSTR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|APB2ENR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|APB2LPENR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|APB2RSTR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|BDCR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|CFGR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|CIR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|CR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|CSR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|PLLCFGR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|PLLI2SCFGR" value="HC" />
+        <entry key="STM32F401.svd|p:RCC|SSCGR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI1" value="-E" />
+        <entry key="STM32F401.svd|p:SPI1|CR1" value="HC" />
+        <entry key="STM32F401.svd|p:SPI1|CR2" value="HC" />
+        <entry key="STM32F401.svd|p:SPI1|CRCPR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI1|DR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI1|I2SCFGR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI1|I2SPR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI1|RXCRCR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI1|SR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI1|TXCRCR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI2" value="-E" />
+        <entry key="STM32F401.svd|p:SPI2|CR1" value="HC" />
+        <entry key="STM32F401.svd|p:SPI2|CR2" value="HC" />
+        <entry key="STM32F401.svd|p:SPI2|CRCPR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI2|DR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI2|I2SCFGR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI2|I2SPR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI2|RXCRCR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI2|SR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI2|TXCRCR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI3" value="-E" />
+        <entry key="STM32F401.svd|p:SPI3|CR1" value="HC" />
+        <entry key="STM32F401.svd|p:SPI3|CR2" value="HC" />
+        <entry key="STM32F401.svd|p:SPI3|CRCPR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI3|DR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI3|I2SCFGR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI3|I2SPR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI3|RXCRCR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI3|SR" value="HC" />
+        <entry key="STM32F401.svd|p:SPI3|TXCRCR" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1" value="-E" />
+        <entry key="STM32F401.svd|p:TIM1|ARR" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|BDTR" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|CCER" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|CCMR1_Input" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|CCMR1_Output" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|CCMR2_Input" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|CCMR2_Output" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|CCR1" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|CCR2" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|CCR3" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|CCR4" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|CNT" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|CR1" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|CR2" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|DCR" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|DIER" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|DMAR" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|EGR" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|PSC" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|RCR" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|SMCR" value="HC" />
+        <entry key="STM32F401.svd|p:TIM1|SR" value="HC" />
+        <entry key="STM32F401.svd|p:USART1" value="-E" />
+        <entry key="STM32F401.svd|p:USART1|BRR" value="HC" />
+        <entry key="STM32F401.svd|p:USART1|CR1" value="HC" />
+        <entry key="STM32F401.svd|p:USART1|CR2" value="HC" />
+        <entry key="STM32F401.svd|p:USART1|CR3" value="HC" />
+        <entry key="STM32F401.svd|p:USART1|DR" value="HC" />
+        <entry key="STM32F401.svd|p:USART1|GTPR" value="HC" />
+        <entry key="STM32F401.svd|p:USART1|SR" value="HC" />
+        <entry key="STM32F401.svd|p:USART2" value="-E" />
+        <entry key="STM32F401.svd|p:USART2|BRR" value="HC" />
+        <entry key="STM32F401.svd|p:USART2|CR1" value="HC" />
+        <entry key="STM32F401.svd|p:USART2|CR2" value="HC" />
+        <entry key="STM32F401.svd|p:USART2|CR3" value="HC" />
+        <entry key="STM32F401.svd|p:USART2|DR" value="HC" />
+        <entry key="STM32F401.svd|p:USART2|GTPR" value="HC" />
+        <entry key="STM32F401.svd|p:USART2|SR" value="HC" />
+        <entry key="STM32F401.svd|p:USART6" value="-E" />
+        <entry key="STM32F401.svd|p:USART6|BRR" value="HC" />
+        <entry key="STM32F401.svd|p:USART6|CR1" value="HC" />
+        <entry key="STM32F401.svd|p:USART6|CR2" value="HC" />
+        <entry key="STM32F401.svd|p:USART6|CR3" value="HC" />
+        <entry key="STM32F401.svd|p:USART6|DR" value="HC" />
+        <entry key="STM32F401.svd|p:USART6|GTPR" value="HC" />
+        <entry key="STM32F401.svd|p:USART6|SR" value="HC" />
+      </map>
+    </option>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
@@ -85,28 +322,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lvgl&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH/Core/Src&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "lvgl",
+    "last_opened_file_path": "/Users/hatsunemiku/Documents/Dev/Clion/SFNCO-SWITCH",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.cidr.embedded.config",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Core/Src" />
       <recent name="$PROJECT_DIR$/Core/Src/FT6336" />
       <recent name="$PROJECT_DIR$/Drivers" />
@@ -128,6 +366,14 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="STM32F401-t1.elf" type="com.jetbrains.cidr.embedded.customgdbserver.type" factoryName="com.jetbrains.cidr.embedded.customgdbserver.factory" nameIsGenerated="true" PROGRAM_PARAMS="-f interface/stlink.cfg -f target/stm32f4x.cfg" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="STM32F401-t1" TARGET_NAME="STM32F401-t1.elf" CONFIG_NAME="Debug" version="1" RUN_TARGET_PROJECT_NAME="STM32F401-t1" RUN_TARGET_NAME="STM32F401-t1.elf">
+      <custom-gdb-server version="1" gdb-connect="localhost:3333" executable="/opt/homebrew/bin/openocd" warmup-ms="0" download-type="UPDATED_ONLY" reset-cmd="monitor reset" reset-type="AFTER_DOWNLOAD">
+        <debugger kind="GDB" isBundled="true" />
+      </custom-gdb-server>
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OCD STM32F401_ST7789V" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="STM32F401-t1" TARGET_NAME="STM32F401-t1.elf" CONFIG_NAME="Debug" version="1" RUN_TARGET_PROJECT_NAME="STM32F401-t1" RUN_TARGET_NAME="STM32F401-t1.elf">
       <openocd version="1" gdb-port="3333" telnet-port="4444" board-config="/opt/homebrew/Cellar/open-ocd/0.12.0_1/share/openocd/scripts/board/stm32f4discovery.cfg" reset-type="INIT" download-type="UPDATED_ONLY">
         <debugger kind="GDB" isBundled="true" />
@@ -140,6 +386,7 @@
       <item itemvalue="CMake 应用程序.STM32F401-t1.elf" />
       <item itemvalue="OpenOCD 下载并运行.OCD STM32F401-t1" />
       <item itemvalue="OpenOCD 下载并运行.OCD STM32F401_ST7789V" />
+      <item itemvalue="嵌入式 GDB 服务器.STM32F401-t1.elf" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
@@ -161,7 +408,7 @@
       <workItem from="1726233322920" duration="1584000" />
       <workItem from="1726234939076" duration="699000" />
       <workItem from="1726237002599" duration="2424000" />
-      <workItem from="1726403580307" duration="8264000" />
+      <workItem from="1726403580307" duration="25230000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 添加屏幕PWM调光">
       <option name="closed" value="true" />
@@ -195,7 +442,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726062738764</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: 添加ADC摇杆">
+      <option name="closed" value="true" />
+      <created>1726415431867</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726415431867</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +465,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: 添加屏幕PWM调光" />
     <MESSAGE value="feat: 添加printf()重定向" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 添加printf()重定向" />
+    <MESSAGE value="feat: 添加ADC摇杆" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 添加ADC摇杆" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="com.jetbrains.cidr.embedded.openocd.conf.type">
+        <watch expression="adc1" language="ObjectiveC" />
+        <watch expression="da" language="ObjectiveC" />
+        <watch expression="adc2" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
